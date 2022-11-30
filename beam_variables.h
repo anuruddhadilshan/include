@@ -1007,19 +1007,19 @@ double lookup_run_info( int runnum, TString lookup_var){
 			if( !(strncmp(lookup_var, "beam_current", 12)) ){
 				return_var = all_run_info[i][1];
 			}
-			if( !(strncmp(lookup_var, "sbs_current", 11)) ){
+			else if( !(strncmp(lookup_var, "sbs_current", 11)) ){
 				return_var = all_run_info[i][2];
 			}
-			if( !(strncmp(lookup_var, "bb_current", 10)) ){
+			else if( !(strncmp(lookup_var, "bb_current", 10)) ){
 				return_var = all_run_info[i][3];
 			}
-			if( !(strncmp(lookup_var, "bbcal_thresh", 12)) ){
+			else if( !(strncmp(lookup_var, "bbcal_thresh", 12)) ){
 				return_var = all_run_info[i][4];
 			}
-			if( !(strncmp(lookup_var, "sbs_field", 9)) ){
+			else if( !(strncmp(lookup_var, "sbs_field", 9)) ){
 				return_var = 0.01*all_run_info[i][5];
 			}
-			if( !(strncmp(lookup_var, "target", 6)) ){
+			else if( !(strncmp(lookup_var, "target", 6)) ){
 				return_var = all_run_info[i][6];
 			}
 		}
