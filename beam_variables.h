@@ -2,7 +2,6 @@
 #define BEAM_VARIABLES_H
 #include <algorithm>
 
-TString target;
 double sbsdist = 2.25;
 
 
@@ -1022,6 +1021,8 @@ double lookup_run_info( int runnum, TString lookup_var){
 			else if( !(strncmp(lookup_var, "target", 6)) ){
 				return_var = all_run_info[i][6];
 			}
+			
+			break;
 		}
 	}
 	
